@@ -7,3 +7,10 @@ import Header from '@/components/Header.vue'
   <Header />
   <router-view />
 </template>
+
+<style>
+body{
+  color: var(--text);
+  background: var(--background);
+}
+</style>

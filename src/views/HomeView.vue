@@ -74,5 +74,11 @@ import ThreeCanvas from "@/components/ThreeCanvas.vue";
   color: var(--text);
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 768px){
+  .home {
+      width: 100% !important;
+    }
+}
 </style>
 

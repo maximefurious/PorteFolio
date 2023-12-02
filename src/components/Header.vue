@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import {onMounted, onUnmounted, ref} from 'vue'
+import {onMounted, onUnmounted} from 'vue'
 
 
 function toggleMenu() {
@@ -244,10 +244,6 @@ export default {
 
     .navbar .right {
       display: none;
-    }
-
-    .home {
-      width: 100% !important;
     }
   }
 

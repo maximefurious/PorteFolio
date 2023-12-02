@@ -26,8 +26,6 @@
 body {
     margin: 0;
     height: 100vh;
-    color: var(--text);
-    background: var(--background);
     transition: color 0.5s,
     background-color 0.5s;
     line-height: 1.6;
