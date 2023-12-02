@@ -37,6 +37,10 @@ function handleResize() {
 onMounted(() => {
   let menuBtn = document.querySelector('.menu-btn')
   menuBtn.addEventListener('click', handleMenuClick)
+  let navitem = document.querySelectorAll('.menu__nav-link')
+  navitem.forEach((item) => {
+    item.addEventListener('click', handleMenuClick)
+  })
   window.addEventListener('keydown', handleEscKey)
   window.addEventListener('resize', handleResize)
 })
@@ -66,8 +70,6 @@ onUnmounted(() => {
         </div>
     </nav>
 
-<!--  munu burger-->
-
 <div class="menu-btn" ref="menuBtn">
     <div class="menu-btn__burger"></div>
   </div>
@@ -75,22 +77,22 @@ onUnmounted(() => {
   <div class="menu">
     <ul class="menu__nav">
       <li class="menu__nav-item">
-        <router-link href="/" class="menu__nav-link">Accueil</router-link>
+        <router-link to="/" class="menu__nav-link">Accueil</router-link>
       </li>
       <li class="menu__nav-item">
-        <router-link href="/about" class="menu__nav-link">À propos</router-link>
+        <router-link to="/about" class="menu__nav-link">À propos</router-link>
       </li>
       <li class="menu__nav-item">
-        <router-link href="/projects" class="menu__nav-link">Projets</router-link>
+        <router-link to="/projects" class="menu__nav-link">Projets</router-link>
       </li>
       <li class="menu__nav-item">
-        <router-link href="/skills" class="menu__nav-link">Compétences</router-link>
+        <router-link to="/skills" class="menu__nav-link">Compétences</router-link>
       </li>
       <li class="menu__nav-item">
-        <router-link href="/experiences" class="menu__nav-link">Expériences</router-link>
+        <router-link to="/experiences" class="menu__nav-link">Expériences</router-link>
       </li>
       <li class="menu__nav-item">
-        <router-link href="/contact" class="menu__nav-link">Contact</router-link>
+        <router-link to="/contact" class="menu__nav-link">Contact</router-link>
       </li>
     </ul>
   </div>
