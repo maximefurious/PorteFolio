@@ -75,22 +75,22 @@ onUnmounted(() => {
   <div class="menu">
     <ul class="menu__nav">
       <li class="menu__nav-item">
-        <a href="/" class="menu__nav-link">Accueil</a>
+        <router-link href="/" class="menu__nav-link">Accueil</router-link>
       </li>
       <li class="menu__nav-item">
-        <a href="/about" class="menu__nav-link">À propos</a>
+        <router-link href="/about" class="menu__nav-link">À propos</router-link>
       </li>
       <li class="menu__nav-item">
-        <a href="/projects" class="menu__nav-link">Projets</a>
+        <router-link href="/projects" class="menu__nav-link">Projets</router-link>
       </li>
       <li class="menu__nav-item">
-        <a href="/skills" class="menu__nav-link">Compétences</a>
+        <router-link href="/skills" class="menu__nav-link">Compétences</router-link>
       </li>
       <li class="menu__nav-item">
-        <a href="/experiences" class="menu__nav-link">Expériences</a>
+        <router-link href="/experiences" class="menu__nav-link">Expériences</router-link>
       </li>
       <li class="menu__nav-item">
-        <a href="/contact" class="menu__nav-link">Contact</a>
+        <router-link href="/contact" class="menu__nav-link">Contact</router-link>
       </li>
     </ul>
   </div>
