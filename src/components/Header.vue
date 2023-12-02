@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <router-link to="/" class="nav-item">Portefolio.</router-link>
         </div>
         <div class="right">
+            <router-link to="/" class="nav-item">Accueil</router-link>
             <router-link to="/about" class="nav-item">À propos</router-link>
             <router-link to="/projects" class="nav-item">Projets</router-link>
             <router-link to="/skills" class="nav-item">Compétences</router-link>
