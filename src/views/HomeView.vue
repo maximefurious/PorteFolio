@@ -7,7 +7,7 @@ import Header from '@/components/Header.vue'
     <Header />
     <div class="home-content">
       <div class="home-text">
-        <h1 class="home-title">Hey,</h1>
+        <h1 class="home-title">Hey tous le monde,</h1>
         <h2 class="home-subtitle">Je m'appelle <span>Maxime Boujeant</span></h2>
         <p class="home-paragrap">
           Je suis un étudiant en informatique en <span class="school">BUT informatique</span> à Lannion. Dans la vie, j'aime l'adrénaline, les voitures et la programmation. Je suis quelqu'un de dynamique et 
