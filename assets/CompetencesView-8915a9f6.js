@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o as s,c as o,a as t}from"./index-7f4b9199.js";const c={},n={class:"skills"},_=t("h1",null,"Compétences",-1),r=[_];function a(i,l){return s(),o("div",n,r)}const f=e(c,[["render",a]]);export{f as default};
