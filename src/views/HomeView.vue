@@ -20,14 +20,10 @@ import ThreeCanvas from "@/components/ThreeCanvas.vue";
 
 <style>
 .home {
-  width: 100%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.home-content {
-  width: 60%;
 }
 
 .home-title {

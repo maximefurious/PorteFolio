@@ -19,8 +19,8 @@ let camera = new PerspectiveCamera(75,
     window.innerWidth / window.innerHeight,
     0.1,
     1000);
-camera.position.z = 6;
-camera.position.y = 4;
+camera.position.z = 7;
+camera.position.y = 5;
 
 scene.add(camera);
 
@@ -32,17 +32,18 @@ scene.add(light);
 const ambientLight = new AmbientLight(0xffffff, 3);
 scene.add(ambientLight);
 
-// on charge le model GLTF qui est dans les assets
+
+// on charge le fichier glb qui est dans les assets
 const loader = new GLTFLoader();
-let planet = null;
+let car = null;
 loader.load(
-    'https://raw.githubusercontent.com/Tresjs/assets/main/models/gltf/low-poly/planet.gltf',
-    (gltf) => {
-      planet = gltf.scene;
-      planet.scale.set(1.5, 1.5, 1.5);
-      planet.position.x = 3;
-      planet.position.y = 4;
-      scene.add(planet);
+    'model/datsun_240z.glb',
+    (glb) => {
+      car = glb.scene;
+      car.scale.set(1.2, 1.2, 1.2);
+      car.position.x = 3;
+      car.position.y = 3.5;
+      scene.add(car);
     }
 );
 
@@ -64,9 +65,8 @@ const loop = () => {
   renderer.render(scene, camera);
   requestAnimationFrame(loop);
 
-  if (planet) {
-    planet.rotation.y += 0.01;
-    planet.rotation.x += 0.01;
+  if (car) {
+    car.rotation.y += 0.001;
   }
 };
 
