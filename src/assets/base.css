@@ -20,11 +20,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
     font-weight: normal;
 }
 
 body {
+    margin: 0;
     height: 100vh;
     color: var(--text);
     background: var(--background);
