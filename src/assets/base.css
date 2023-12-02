@@ -1,0 +1,52 @@
+:root {
+  --text: #040307;
+  --background: #F6F5FA;
+  --primary: #CAC1E1;
+  --secondary: #CAC1E1;
+  --accent: #0FE628;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #F9F8FC;
+        --background: #06050A;
+        --primary: #A18DDD;
+        --secondary: #271E3E;
+        --accent: #19F032;
+    }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--background);
+  transition:
+  color 0.5s,
+  background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+  Inter,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
