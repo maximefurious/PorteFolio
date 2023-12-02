@@ -53,6 +53,7 @@ import Header from '@/components/Header.vue'
 .home-paragrap {
   font-size: 1.2rem;
   color: var(--text);
+  max-width: 800px;
 }
 
 .home-paragrap .school {
