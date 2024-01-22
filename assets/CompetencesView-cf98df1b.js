@@ -1,1 +1,0 @@
-import{_ as e,o as s,c,a as o}from"./index-bb667c45.js";const t={},n={class:"skills"},_=o("h1",null,"Compétences",-1),a=[_];function r(i,l){return s(),c("div",n,a)}const f=e(t,[["render",r]]);export{f as default};
