@@ -1,0 +1,1 @@
+import{_ as e,o as s,c,a as o}from"./index-bb667c45.js";const t={},n={class:"experiences"},r=o("h1",null,"experiences",-1),_=[r];function a(i,d){return s(),c("div",n,_)}const p=e(t,[["render",a]]);export{p as default};
