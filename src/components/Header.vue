@@ -2,7 +2,6 @@
 import { RouterLink } from 'vue-router'
 import {onMounted, onUnmounted} from 'vue'
 
-
 function toggleMenu() {
   document.querySelector('.menu-btn').classList.toggle('open')
   document.querySelector('.menu').classList.toggle('open')
@@ -14,7 +13,6 @@ function closeMenu() {
 }
 
 function handleMenuClick(e) {
-  console.log('handleMenuClick')
   if (e.target.classList.contains('menu__nav-link')) {
     closeMenu()
   } else {
@@ -34,6 +32,16 @@ function handleResize() {
   }
 }
 
+function handleScroll() {
+  const header = document.querySelector('.navbar')
+  console.log('scroll')
+  if (window.scrollY > 0) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+}
+
 onMounted(() => {
   let menuBtn = document.querySelector('.menu-btn')
   menuBtn.addEventListener('click', handleMenuClick)
@@ -43,6 +51,8 @@ onMounted(() => {
   })
   window.addEventListener('keydown', handleEscKey)
   window.addEventListener('resize', handleResize)
+
+  window.addEventListener('scroll', handleScroll)
 })
 
 onUnmounted(() => {
@@ -50,6 +60,7 @@ onUnmounted(() => {
   menuBtn.removeEventListener('click', handleMenuClick)
   window.removeEventListener('keydown', handleEscKey)
   window.removeEventListener('resize', handleResize)
+  window.removeEventListener('scroll', handleScroll)
 })
 
 
@@ -106,6 +117,13 @@ export default {
 </script>
 
 <style>
+
+.scroll {
+  background-color: var(--secondary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
 .navbar {
     position: absolute;
     top: 0;
@@ -136,7 +154,7 @@ export default {
 .navbar .right {
     position: absolute;
     right: 0;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .navbar .right .nav-item {
@@ -248,6 +266,5 @@ export default {
       display: none;
     }
   }
-
 </style>
 

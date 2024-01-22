@@ -1,6 +1,7 @@
 
 <script setup>
 import Header from '@/components/Header.vue'
+
 </script>
 
 <template>
@@ -12,5 +13,7 @@ import Header from '@/components/Header.vue'
 body{
   color: var(--text);
   background: var(--background);
+  
+  font-family: 'Poppins', sans-serif;
 }
 </style>

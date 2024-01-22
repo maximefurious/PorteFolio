@@ -1,5 +1,7 @@
 <script setup>
 import ThreeCanvas from "@/components/ThreeCanvas.vue";
+import SocialLinkIcon from "@/components/SocialLinkIcon.vue";
+import ProjetsView from "@/views/ProjetsView.vue";
 </script>
 
 <template>
@@ -9,14 +11,23 @@ import ThreeCanvas from "@/components/ThreeCanvas.vue";
         <h1 class="home-title">Hey,</h1>
         <h2 class="home-subtitle">Je m'appelle <span>Maxime Boujeant</span></h2>
         <p class="home-paragrap">
-          Je suis un étudiant en informatique en <span class="school">BUT informatique</span> à Lannion. Dans la vie, j'aime l'adrénaline, les voitures et la programmation. Je suis quelqu'un de dynamique et
-          je suis toujours à la recherche de nouveaux challenges, ainsi que d'opportunité pour m'améliorer et développer mes compétences.
+          Je suis un étudiant en <span class="school">BUT informatique</span> à Lannion. Dans la vie, j'aime
+          l'adrénaline, les voitures et la programmation. Je suis quelqu'un de dynamique et
+          je suis toujours à la recherche de nouveaux challenges, ainsi que d'opportunité pour m'améliorer et développer
+          mes compétences.
         </p>
-        <a href="/contact" target="_blank" class="btn-contact">Me contacter</a>
+        <a href="/contact" class="btn-contact">Me contacter</a>
+        <div class="social-links">
+          <social-link-icon link="https://www.linkedin.com/in/maxime-boujeant-88377a215/" icon="fab fa-linkedin"
+                            color="#0e76a8"/>
+          <social-link-icon link="https://github.com/maximefurious" icon="fab fa-github" color="#333"/>
+          <social-link-icon link="https://www.instagram.com/maximeboujeant/" icon="fab fa-instagram" color="#e1306c"/>
+        </div>
       </div>
-      <ThreeCanvas />
+      <ThreeCanvas/>
     </div>
   </div>
+  <ProjetsView />
 </template>
 
 <style>
@@ -75,10 +86,16 @@ import ThreeCanvas from "@/components/ThreeCanvas.vue";
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px){
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
   .home {
-      width: 100% !important;
-    }
+    width: 100% !important;
+  }
 }
 </style>
 
