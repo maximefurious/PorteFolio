@@ -32,16 +32,6 @@ function handleResize() {
   }
 }
 
-function handleScroll() {
-  const header = document.querySelector('.navbar')
-  console.log('scroll')
-  if (window.scrollY > 0) {
-    header.classList.add('scroll')
-  } else {
-    header.classList.remove('scroll')
-  }
-}
-
 onMounted(() => {
   let menuBtn = document.querySelector('.menu-btn')
   menuBtn.addEventListener('click', handleMenuClick)
@@ -51,8 +41,6 @@ onMounted(() => {
   })
   window.addEventListener('keydown', handleEscKey)
   window.addEventListener('resize', handleResize)
-
-  window.addEventListener('scroll', handleScroll)
 })
 
 onUnmounted(() => {
@@ -125,7 +113,7 @@ export default {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -133,6 +121,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
 }
 .nav-item {
     text-decoration: none;
