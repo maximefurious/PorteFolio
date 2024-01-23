@@ -2,10 +2,11 @@
 import ThreeCanvas from "@/components/ThreeCanvas.vue";
 import SocialLinkIcon from "@/components/SocialLinkIcon.vue";
 import ProjetsView from "@/views/ProjetsView.vue";
+import CompetencesView from "./CompetencesView.vue";
 </script>
 
 <template>
-  <div class="home">
+  <div class="home" id="about">
     <div class="home-content">
       <div class="home-text">
         <h1 class="home-title">Hey,</h1>
@@ -19,7 +20,7 @@ import ProjetsView from "@/views/ProjetsView.vue";
         <a href="/contact" class="btn-contact">Me contacter</a>
         <div class="social-links">
           <social-link-icon link="https://www.linkedin.com/in/maxime-boujeant-88377a215/" icon="fab fa-linkedin"
-                            color="#0e76a8"/>
+          color="#0e76a8"/>
           <social-link-icon link="https://github.com/maximefurious" icon="fab fa-github" color="#333"/>
           <social-link-icon link="https://www.instagram.com/maximeboujeant/" icon="fab fa-instagram" color="#e1306c"/>
         </div>
@@ -28,6 +29,7 @@ import ProjetsView from "@/views/ProjetsView.vue";
     </div>
   </div>
   <ProjetsView />
+  <CompetencesView />
 </template>
 
 <style>

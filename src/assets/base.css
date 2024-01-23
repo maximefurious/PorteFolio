@@ -27,6 +27,8 @@
 *::after {
     box-sizing: border-box;
     font-weight: normal;
+    scroll-behavior: smooth;
+
 }
 
 body {

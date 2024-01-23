@@ -10,31 +10,6 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjetsView.vue')
-    },
-    {
-      path: '/skills',
-      name: 'skills',
-      component: () => import('../views/CompetencesView.vue')
-    },
-    {
-      path: '/experiences',
-      name: 'experiences',
-      component: () => import('../views/ExperiencesView.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/ContactView.vue')
-    },
-    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../views/NotFoundView.vue')

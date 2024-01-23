@@ -3,7 +3,7 @@ import Project from "@/components/Project.vue";
 </script>
 
 <template>
-    <div class="projects">
+    <div class="projects" id="projects">
         <project 
             title="Zencraft" 
             github="Private"
@@ -45,20 +45,19 @@ import Project from "@/components/Project.vue";
 
         <project 
             title="PortfolioV4" 
-            github="https://github.com/maximefurious/PorteFolioV4"
+            github="https://github.com/maximefurious/PorteFolio"
             date="2023 - Aujourd'hui"
             description="Ce projet représente la quatrième version de mon portfolio. Il a été réaliser dans le contexte de la découverte 
             d'un environnement de mise en production en intégration continue. J'ai donc mis en place un environnement de CI/CD avec GitHub et 
             Hostinger qui permet de déployer automatiquement le site et de maintenir une version de production à jour."             
             image="./img/PortfolioV4.png" 
-            :skills="['VueJS', 'Git', 'CI/CD']"
+            :skills="['VueJS', 'ThreeJS', 'Git', 'CI/CD']"
             :left="false"/>    
     </div>
 </template>
 
 <style scoped>
     .projects {
-        height: 100%;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
