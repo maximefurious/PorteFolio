@@ -3,6 +3,7 @@ import ThreeCanvas from "@/components/ThreeCanvas.vue";
 import SocialLinkIcon from "@/components/SocialLinkIcon.vue";
 import ProjetsView from "@/views/ProjetsView.vue";
 import CompetencesView from "./CompetencesView.vue";
+import ExperiencesView from "@/views/ExperiencesView.vue";
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import CompetencesView from "./CompetencesView.vue";
   </div>
   <ProjetsView />
   <CompetencesView />
+  <ExperiencesView />
 </template>
 
 <style>
@@ -38,6 +40,7 @@ import CompetencesView from "./CompetencesView.vue";
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 .home-title {

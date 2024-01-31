@@ -84,11 +84,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <canvas ref="experience" class="experiences"></canvas>
+  <canvas ref="experience" class="car"></canvas>
 </template>
 
 <style>
-.experiences {
+.car {
   position: absolute;
   top: 0;
   left: 0;

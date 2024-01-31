@@ -325,11 +325,6 @@ export default {
   margin-left: 20px;
 }
 
-.language-link {
-  text-decoration: none;
-  color: inherit;
-}
-
 .language-item {
   text-align: center;
   display: flex;
@@ -337,12 +332,5 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   margin: 10px;
-}
-
-.language-logo {
-  max-width: 100px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
 }
 </style>
