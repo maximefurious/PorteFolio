@@ -81,41 +81,26 @@ defineProps({
 .timeline-content {
   position: relative;
   width: 90%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  box-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-.timeline-content::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  border: 10px solid transparent;
-  border-right-color: var(--primary);
-  border-left: 0;
-  border-bottom: 0;
-  top: 26px;
-}
-
-.timeline-content::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  border: 10px solid transparent;
-  border-right-color: var(--primary);
-  border-left: 0;
-  border-bottom: 0;
-  top: 26px;
+.timeline-content:hover {
+  background-color: var(--primary);
+  opacity: 0.7;
+  border: 1px solid var(--primary);
+  box-shadow: 3px 3px 7px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
 }
 
 .date {
   display: block;
   margin-top: 10px;
-  color: var(--background);
+  color: var(--text);
   font-weight: bold;
 }
 
@@ -123,12 +108,13 @@ defineProps({
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--background);
+  color: var(--text);
 }
 
 .description {
   font-size: 1rem;
-  color: var(--background);
+  color: var(--text);
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 600px) {
