@@ -1,6 +1,6 @@
 # PorteFolio Maxime Boujeant
 
-Ce site à été réalisé afin de tester mes compétence en VueJs et afin de 
+Ce site à été réalisé afin de tester mes compétence en VueJs et afin de
 mettre en place un environnement de Continious Intégration avec Hostinger
 
 ## Customize configuration

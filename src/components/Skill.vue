@@ -5,7 +5,6 @@ const props = defineProps({
     name: String,
     icon: String,
 })
-
 </script>
 
 <template>

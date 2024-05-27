@@ -17,14 +17,21 @@ import Skill from '@/components/Skill.vue'
           v-for="category in categories"
           :key="category.id"
           @click="selectCategory(category)"
-          :class="{ 'active-category': selectedCategory === category.name }"
-          class="category">
+          :class="{
+                    'active-category': selectedCategory === category.name,
+                }"
+          class="category"
+      >
         {{ category.name }}
       </div>
     </div>
 
     <div class="language-list">
-      <div v-for="language in filteredLanguages" :key="language.id" class="language-item">
+      <div
+          v-for="language in filteredLanguages"
+          :key="language.id"
+          class="language-item"
+      >
         <div class="language-item-inner">
           <Skill :name="language.name" :icon="language.class"/>
         </div>
@@ -218,25 +225,62 @@ export default {
           class: 'devicon-flask-original',
           category: 'Back-end',
         },
+        {
+          id: 29,
+          name: 'NodeJS',
+          class: 'devicon-nodejs-plain colored',
+          category: 'Back-end',
+        },
+        {
+          id: 30,
+          name: 'MongoDB',
+          class: 'devicon-mongodb-plain colored',
+          category: 'Back-end',
+        },
+        {
+          id: 31,
+          name: 'Django',
+          class: 'devicon-django-plain colored',
+          category: 'Back-end',
+        },
+        {
+          id: 32,
+          name: 'Subversion',
+          class: 'devicon-subversion-plain colored',
+          category: 'Software',
+        },
+        {
+          id: 33,
+          name: 'Maven',
+          class: 'devicon-maven-plain colored',
+          category: 'Software',
+        },
+        {
+          id: 34,
+          name: 'elasticsearch',
+          class: 'devicon-elasticsearch-plain colored',
+          category: 'Back-end',
+        }
       ],
-      selectedCategory: "Front-end", // La catégorie sélectionnée par défaut
-    };
+      selectedCategory: 'Front-end', // La catégorie sélectionnée par défaut
+    }
   },
   computed: {
     filteredLanguages() {
-      return this.languages.filter(language => language.category === this.selectedCategory);
+      return this.languages.filter(
+          (language) => language.category === this.selectedCategory
+      )
     },
   },
   methods: {
     selectCategory(category) {
-      this.selectedCategory = category.name;
+      this.selectedCategory = category.name
     },
   },
-};
+}
 </script>
 
 <style scoped>
-
 #skills {
   margin-bottom: 50px;
   min-height: 500px;
@@ -271,7 +315,6 @@ export default {
   background: var(--primary);
   border-top-right-radius: 200%;
 }
-
 
 /* Styles pour la liste des catégories */
 .categories {

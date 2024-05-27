@@ -1,19 +1,19 @@
 :root {
-    --text: #F9F8FC;
-    --background: #06050A;
-    --primary: #A18DDD;
-    --primary-opacity-60: #A18DDD;
-    --secondary: #271E3E;
-    --accent: #19F032;
+    --text: #f9f8fc;
+    --background: #06050a;
+    --primary: #a18ddd;
+    --primary-opacity-60: #a18ddd;
+    --secondary: #271e3e;
+    --accent: #19f032;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: #F9F8FC;
-        --background: #06050A;
-        --primary: #A18DDD;
-        --secondary: #271E3E;
-        --accent: #19F032;
+        --text: #f9f8fc;
+        --background: #06050a;
+        --primary: #a18ddd;
+        --secondary: #271e3e;
+        --accent: #19f032;
     }
 }
 
@@ -23,27 +23,28 @@
     box-sizing: border-box;
     font-weight: normal;
     scroll-behavior: smooth;
-
 }
 
 body {
     margin: 0;
     height: 100vh;
-    transition: color 0.5s,
-    background-color 0.5s;
+    transition:
+        color 0.5s,
+        background-color 0.5s;
     line-height: 1.6;
-    font-family: Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
     font-size: 15px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
