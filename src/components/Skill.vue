@@ -1,7 +1,7 @@
 <!-- On créer un composant qui prend en paramètre le nom de la compétence la class pour l'icon devicon  -->
 <script setup>
 import { defineProps } from 'vue'
-const props = defineProps({
+defineProps({
     name: String,
     icon: String,
 })
