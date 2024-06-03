@@ -24,11 +24,12 @@ import Project from '@/components/Project.vue'
         :left="true"
         url="https://zencraft.fr"
         :competences="[
-            'Compétence 1',
-            'Compétence 2',
-            'Compétence 4',
-            'Compétence 5',
-            'Compétence 6'
+            {competence: 'Réaliser des applications', justification: 'Je suis capable de réaliser des applications car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place un serveur Minecraft basé sur le système multi-server et j\'ai églaement développer tous le système économique et fonctionnel du serveur permettant au joueurs d\'avoir une expériences plaisante et agréable.'},
+            {competence: 'Optimiser des applications', justification: 'Je suis capable d\'optimiser des applications car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place un système de cache Redis pour optimiser les performances du serveur Minecraft. J\'ai également mis en place un certain nombre d\'outils de monitoring pour suivre les performances du serveur Minecraft.'},
+            {competence: 'Administrer des Systèmes', justification: 'Je suis capable d\'administrer des systèmes informatique car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place un serveur dédié pour héberger le serveur Minecraft. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
+            {competence: 'Gérer des données', justification: 'Je suis capable de gérer des données divers car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place une base de donnée MySQL et Redis pour stocker les données des joueurs et des plugins. J\'ai également pu mettre en place un système de cache Redis pour optimiser les performances du serveur Minecraft. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
+            {competence: 'Conduire une équipe', justification: 'Je suis capable de conduire une équipe informatique car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place une équipe de développeur Java et Web pour la création de contenenue (plugins) et web pour leur site internet. J\'ai également pu mettre en place un système de management en Kanba afin de pouvoir gérer les Deadlines et le projet dans sa globalité. J\'ai également su faire des reunions avec les joueurs et rédiger des comptes rendu afin de pouvoir recueillir les avis des joueurs et les remonter à l\'équipe de développement. J\'ai également pu mettre en place un système de recrutement pour agrandir l\'équipe de développement.'},
+            {competence: 'Collaborer en équipe', justification: 'Je suis capable de collaborer en équipe informatique car dans le cadre de la réalisation du projet ZenCraftV3, j\'ai su mettre en place une veille informatique pour être mis au courant des nouvelles mise à jours PaperMC. J\'ai également pu apporter mon expertise dans les divers décisions prises par l\'équipe apportant ainsi des changement au sein de l\'organisation mais accompagnant également le chef de projet au management du projet informatique'},
         ]"
     />
 
@@ -55,11 +56,10 @@ import Project from '@/components/Project.vue'
                 'Swift',
             ]"
         :competences="[
-            'Compétence 1',
-            'Compétence 2',
-            'Compétence 3',
-            'Compétence 4',
-            'Compétence 6'
+            {competence: 'Réaliser des applications', justification: 'Je suis capable de réaliser des applications car dans le cadre de la réalisation du projet FastTrackAuto, j\'ai su mettre en place une application mobile Flutter permettant de communiquer avec un module OBD2 pour récupérer les données de la voiture. J\'ai également pu mettre en place une base de donnée MySQL pour stocker les données des utilisateurs.'},
+            {competence: 'Optimiser des applications', justification: 'Je suis capable d\'optimiser des applications car dans le cadre de la réalisation du projet FastTrackAuto, j\'ai su mettre en place un système de cache pour stocker les données des utilisateurs et ainsi éviter de les récupérer à chaque fois. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
+            {competence: 'Administrer des Systèmes', justification: 'Je suis capable d\'administrer des systèmes informatique car dans le cadre de la réalisation du projet FastTrackAuto, j\'ai su mettre en place un serveur dédié pour héberger la base de donnée MySQL. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
+            {competence: 'Gérer des données', justification: 'Je suis capable de gérer des données divers car dans le cadre de la réalisation du projet FastTrackAuto, j\'ai su mettre en place une base de donnée MySQL pour stocker les données des utilisateurs. J\'ai également pu mettre en place un système de cache pour stocker les données des utilisateurs et ainsi éviter de les récupérer à chaque fois. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
         ]"
         :left="false"
     />
@@ -75,8 +75,8 @@ import Project from '@/components/Project.vue'
         :skills="['React', 'Git', 'Ajax', 'GreenIT']"
         :left="true"
         :competences="[
-            'Compétence 1',
-            'Compétence 2',
+            {competence: 'Réaliser des applications', justification: 'Je suis capable de réaliser des applications car dans le cadre de la réalisation du projet PortefolioV3, j\'ai su mettre en place un site internet basé sur le framework ReactJS. J\'ai également pu mettre en place un système de récupération de données en AJAX pour récupérer les données du serveur.'},
+            {competence: 'Optimiser des applications', justification: 'Je suis capable d\'optimiser des applications car dans le cadre de la réalisation du projet PortefolioV3, j\'ai su mettre en place des outils d\'analyse afin de pouvoir avoir un site internet respectant le GreenIT. Une grande partie de l\'optimisation a été faite sur le serveur pour réduire la consommation énergétique.'},
         ]"
     />
 
@@ -91,8 +91,11 @@ import Project from '@/components/Project.vue'
         :skills="['VueJS', 'ThreeJS', 'Git', 'CI/CD']"
         :left="false"
         :competences="[
-            'Compétence 1',
-            'Compétence 2',
+            // 'Compétence 1',
+            // 'Compétence 2',
+            {competence: 'Réaliser des applications', justification: 'Je suis capable de réaliser des applications car dans le cadre de la réalisation du projet PortefolioV4, j\'ai su mettre en place un site internet basé sur le framework VueJS. J\'ai également pu mettre en place un système de récupération de données en AJAX pour récupérer les données du serveur.'},
+            {competence: 'Optimiser des applications', justification: 'Je suis capable d\'optimiser des applications car dans le cadre de la réalisation du projet PortefolioV4, j\'ai su mettre en place un système de cache pour stocker les données des utilisateurs et ainsi éviter de les récupérer à chaque fois. J\'ai également pu mettre en place un système de sauvegarde automatique des données pour éviter toute perte de données.'},
+            {competence: 'Administrer des Systèmes', justification: 'Je suis capable d\'administrer des systèmes informatique car dans le cadre de la réalisation du projet PortefolioV4, j\'ai su mettre en place un système de déploiement automatique avec GitHub et Hostinger pour déployer automatiquement le site internet'},
         ]"
     />
   </div>

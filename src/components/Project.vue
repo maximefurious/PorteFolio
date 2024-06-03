@@ -1,12 +1,20 @@
 <!-- on fait une section qui iustre un projet le composant prend en paramètre une image, un titre, une description et une liste de compétence -->
 <script setup>
-import {defineProps} from 'vue'
+import {defineProps, ref} from 'vue'
+import Modal from "@/components/Modal.vue";
 
-const props = defineProps({
+const dialogState = ref(false)
+
+const show = () => {
+  dialogState.value = true
+}
+
+defineProps({
   title: String,
   github: String, // soit c'est un lien soit c'est private
   date: String,
   description: String,
+  descriptionExtended: String,
   image: String,
   skills: Array,
   left: Boolean,
@@ -17,6 +25,22 @@ const props = defineProps({
 
 <template>
   <div class="project">
+    <Modal v-if="dialogState" @close="dialogState = false">
+      <template v-slot:header>
+        <h2>{{ title }}</h2>
+        <span>{{ date }}</span>
+      </template>
+      <template v-slot:content>
+        <div class="project-skills">
+          <div v-for="competence in competences"
+              :key="competence"
+              class="project-competences">
+            <span class="project-competence">{{ competence.competence }} </span> :
+            <span>{{ competence.justification }}</span>
+          </div>
+        </div>
+      </template>
+    </Modal>
     <div class="project-image-left" v-if="left">
       <a :href="url" target="_blank">
         <img :src="image" alt="project image"/>
@@ -28,6 +52,8 @@ const props = defineProps({
         <a v-if="github !== 'Private'" :href="github" target="_blank">
           <i class="fab fa-github"></i>
         </a>
+        <button class="open-modal-btn" @click="show">+</button>
+
       </div>
 
       <span class="project-date">{{ date }}</span>
@@ -44,7 +70,7 @@ const props = defineProps({
             v-for="competence in competences"
             :key="competence"
             class="project-competence"
-        >{{ competence }}</span>
+        >{{ competence.competence }}</span>
       </div>
     </div>
     <div class="project-image-right" v-if="!left">
@@ -161,6 +187,16 @@ img {
   transition: all 0.3s ease;
 }
 
+.project-competences {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text);
+}
+
 .project-competence {
   font-size: 1rem;
   font-weight: bold;
@@ -189,6 +225,24 @@ img {
 
 .fa-github:hover {
   color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.open-modal-btn {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.open-modal-btn:hover {
+  background-color: var(--secondary);
+  color: var(--text);
   transition: all 0.3s ease;
 }
 </style>
