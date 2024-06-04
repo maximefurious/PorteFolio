@@ -203,15 +203,15 @@ img {
   margin-bottom: 10px;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid var(--secondary);
-  background-color: var(--secondary);
+  border: 1px solid var(--tertiary);
+  background-color: var(--tertiary);
   color: var(--text);
   transition: all 0.3s ease;
 }
 
 .project-competence:hover {
   background-color: var(--secondary-opacity-30);
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--tertiary);
   transition: all 0.3s ease;
 }
 
