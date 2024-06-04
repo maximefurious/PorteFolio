@@ -75,14 +75,21 @@ footer {
 }
 
 header button {
-  background-color: var(--primary);
+  background-color: #ce0f0f;
+  border: 1px solid #ce0f0f;
   color: #ffffff;
   padding: 5px 10px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
 }
+
+header button:hover {
+  background-color: #b20c0c;
+  border: 1px solid #b20c0c;
+  opacity: 0.8;
+}
+
 footer button {
   background-color: var(--primary);
   color: #ffffff;
@@ -94,7 +101,7 @@ footer button {
   font-size: 1rem;
 }
 
-button:hover {
+footer button:hover {
   background-color: var(--secondary);
   opacity: 0.8;
 }
