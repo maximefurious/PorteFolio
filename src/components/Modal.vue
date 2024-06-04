@@ -14,7 +14,7 @@
       </section>
       <footer>
         <slot name="footer">
-          <button @click="$emit('close')">Close</button>
+          <button id="close" @click="$emit('close')">Close</button>
         </slot>
       </footer>
     </div>
@@ -27,6 +27,16 @@ import {defineProps} from 'vue'
 defineProps({
   show: Boolean
 })
+
+const closeModal = (event) => {
+  if (event.key === 'Escape') {
+    document.getElementById('close').click()
+    document.removeEventListener('keydown', closeModal)
+  }
+}
+document.addEventListener('keydown', closeModal)
+
+
 </script>
 
 <style scoped>
