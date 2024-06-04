@@ -5,6 +5,31 @@ import Project from '@/components/Project.vue'
 <template>
   <div class="projects" id="projects">
     <project
+        title="IsmartCollect"
+        github="Private"
+        date="2022 - Aujourd'hui"
+        description="Depuis 2016, MOBIL-INN développe la solution iSmartCollect destinée aux professionnels de la collecte de déchets pour organiser et suivre les opérations sur le terrain. Grâce à ses modules intégrés iSmartCollect répond aux besoins des exploitants et des chauffeurs/rippeurs en éliminant les formulaires “papiers” et éviter ainsi les ressaisies inutiles."
+        image="./img/ismartroad.png"
+        :skills="[
+                'HTML',
+                'CSS',
+                'JS',
+                'VueJS',
+                'Python',
+                'Subversion',
+                'Postgres',
+                'MongoDB',
+            ]"
+        :left="false"
+        url="https://mobil-inn.com/"
+        :competences="[
+            {competence: 'Réaliser des applications', justification: 'Je suis capable de réaliser des applications car dans le cadre de la réalisation du projet entreprise IsmartCollect, j\'ai su faire évoluer le projet en y implémentant de nouvelles fonctionnalité innovantes, comme la modification du module d\'édition de circuit en y apportant une l\'insertion et la gestion plus détailler des points à collecter. Touts ces fonctionnalité font l\'objet actuellement d\'une mise ene production' },
+            {competence: 'Optimiser des applications', justification: 'Je suis capable d\'optimiser des applications car dans le cadre de la réalisation du projet entreprise IsmartCollect, j\'ai su mettre en place un système de cache MongoDB permettant de sauvegarder le résultat des requêtes afin d\'optimiser la gestion des circuit.'},
+            {competence: 'Gérer des données', justification: 'Je suis capable de gérer des données divers car dans le cadre de la réalisation du projet entreprise IsmartCollect, j\'ai su faire évoluer le modèle de base de données PostgresSQL et mongoDB afin d\'y implémenter le système de caching pour l\'édition de circuit. Mais je suis également capable d\'organiser la restitution de données à travers la programmation et la visualisation car j\'ai su affiché les points d\'un circuit depuis la base de données via l\'interface d\'édition de circuit tout en prenant en compte la sécurité et l\'intégrité des données car chiffré en base' },
+            {competence: 'Collaborer en équipe', justification: 'Je suis capable de collaborer en équipe informatique car dans le cadre de la réalisation du projet entreprise IsmartCollect, j\'ai su mettre en place une veille informatique pour être mis au courant des nouvelles mise à jours HereMaps et VueJS. J\'ai également pu apporter mon expertise dans les divers décisions prises par l\'équipe apportant ainsi des changement au sein de l\'organisation comme par exemple la mise en place d\'une base de données Elastic Search pour surveiller les anomalies et le bon déroulement du projet en production. '},
+        ]"
+    />
+    <project
         title="Zencraft"
         github="Private"
         date="2021 - Aujourd'hui"
