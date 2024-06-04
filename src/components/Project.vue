@@ -34,7 +34,7 @@ defineProps({
           <div v-for="competence in competences"
               :key="competence"
               class="project-competences">
-            <span class="project-competence">{{ competence.competence }} </span> :
+            <span class="project-competence-modal">{{ competence.competence }} </span> :
             <span>{{ competence.justification }}</span>
           </div>
         </div>
@@ -212,6 +212,25 @@ img {
 .project-competence:hover {
   background-color: var(--secondary-opacity-30);
   border: 1px solid var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.project-competence-modal {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.project-competence-modal:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary-opacity-60);
   transition: all 0.3s ease;
 }
 
