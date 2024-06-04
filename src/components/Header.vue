@@ -53,7 +53,7 @@ onUnmounted(() => {
 <template>
     <nav class="navbar" ref="navbar">
         <div class="left">
-            <a href="/" class="nav-item">Portefolio.</a>
+            <a href="/" class="nav-item">Portfolio.</a>
         </div>
         <div class="right">
             <a href="/" class="nav-item">Accueil</a>

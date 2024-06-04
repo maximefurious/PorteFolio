@@ -1,4 +1,3 @@
-<!-- on fait une section qui iustre un projet le composant prend en paramètre une image, un titre, une description et une liste de compétence -->
 <script setup>
 import {defineProps, ref} from 'vue'
 import Modal from "@/components/Modal.vue";
@@ -11,7 +10,7 @@ const show = () => {
 
 defineProps({
   title: String,
-  github: String, // soit c'est un lien soit c'est private
+  github: String, // soit c'est un lien, soit c'est private
   date: String,
   description: String,
   descriptionExtended: String,
